@@ -15,7 +15,7 @@ if not os.path.isdir(working_dir):
     exit(1)
 
 # Célkönyvtár a Z: meghajtón
-destination_root = r"Z:\kepernyo"
+destination_root = os.path.join(r"Z:\kepernyo", subfolder)
 os.makedirs(destination_root, exist_ok=True)  # Ha nem létezik, létrehozza
 
 # Végigmegy az almappákon
